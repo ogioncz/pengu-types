@@ -4,13 +4,14 @@ module Pengu.Map exposing (World, Room, Layer, Zone, ZoneKind(..), Action(..))
 @docs World, Room, Layer, Zone, ZoneKind, Action
 -}
 
+import Dict exposing (Dict)
 import Geometry exposing (Point, Polygon)
 
 
 {-| Game world is a collection of rooms.
 -}
 type alias World =
-    List Room
+    Dict String Room
 
 
 {-| For performance reasons, the world is divided into rooms, between which players can roam freely.
