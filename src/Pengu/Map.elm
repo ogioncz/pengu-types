@@ -5,13 +5,12 @@ module Pengu.Map exposing (World, Room, Layer, Zone, ZoneKind(..), Action(..))
 -}
 
 import Geometry exposing (Point, Polygon)
-import Set exposing (Set)
 
 
 {-| Game world is a collection of rooms.
 -}
 type alias World =
-    Set Room
+    List Room
 
 
 {-| For performance reasons, the world is divided into rooms, between which players can roam freely.
@@ -49,7 +48,7 @@ type alias Zone =
 -}
 type ZoneKind
     = Obstacle
-    | Portal Room
+    | Portal String
     | Trigger Action
 
 
