@@ -12,7 +12,7 @@
         "Pengu.Inventory",
         "Pengu.Map"
     ],
-    "version": "0.0.3",
+    "version": "0.0.4",
     "elm-version": "0.17.0 <= v < 0.18.0",
     "license": "MIT"
 }
