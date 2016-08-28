@@ -1,4 +1,4 @@
-module Pengu.Inventory exposing (Item, ItemKind, Inventory)
+module Pengu.Inventory exposing (Item, ItemKind(..), Inventory)
 
 {-| This module contains types representing items a game character can wear, different kinds of those items and a inventory.
 

@@ -1,12 +1,4 @@
-module Pengu.Map
-    exposing
-        ( World
-        , Room
-        , Layer
-        , Zone
-        , ZoneKind
-        , Action
-        )
+module Pengu.Map exposing (World, Room, Layer, Zone, ZoneKind(..), Action(..))
 
 {-| This module contains types for creating a game world.
 @docs World, Room, Layer, Zone, ZoneKind, Action
