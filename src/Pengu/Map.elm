@@ -26,7 +26,7 @@ type alias World =
 -}
 type alias Room =
     { layers : List Layer
-    , spawnPoints : List Point
+    , spawnPoints : Point
     , zones : List Zone
     , music : Maybe String
     }
