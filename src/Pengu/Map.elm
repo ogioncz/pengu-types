@@ -1,6 +1,7 @@
 module Pengu.Map
     exposing
-        ( Room
+        ( World
+        , Room
         , Layer
         , Zone
         , ZoneKind
@@ -8,10 +9,17 @@ module Pengu.Map
         )
 
 {-| This module contains types for creating a game world.
-@docs Room, Layer, Zone, ZoneKind, Action
+@docs World, Room, Layer, Zone, ZoneKind, Action
 -}
 
 import Geometry exposing (Point, Polygon)
+import Set exposing (Set)
+
+
+{-| Game world is a collection of rooms.
+-}
+type alias World =
+    Set Room
 
 
 {-| For performance reasons, the world is divided into rooms, between which players can roam freely.
