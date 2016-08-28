@@ -6,6 +6,8 @@ module Pengu.Inventory exposing (Item, ItemKind, Inventory)
 @docs Item, ItemKind, Inventory
 -}
 
+import Set exposing (Set)
+
 
 {-| Representation of an item for game character to wear.
 -}
@@ -35,5 +37,5 @@ type ItemKind
 
 {-| Inventory represents a set of items the player is wearing.
 -}
-type Inventory
-    = Set Item
+type alias Inventory =
+    Set Item
