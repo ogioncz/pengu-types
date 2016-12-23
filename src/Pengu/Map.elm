@@ -48,7 +48,7 @@ type alias Zone =
 {-| Kind of the room zone.
 -}
 type ZoneKind
-    = Obstacle
+    = Obstacle String
     | Portal String
     | Trigger Action
 
