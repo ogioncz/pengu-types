@@ -1,18 +1,18 @@
 {
+    "version": "0.0.7",
     "summary": "Data types and structures for pengu RPG",
+    "repository": "https://github.com/ogioncz/pengu-types.git",
+    "license": "MIT",
     "source-directories": [
         "src"
     ],
-    "repository": "https://github.com/ogioncz/pengu-types.git",
-    "dependencies": {
-        "elm-lang/core": "4.0.0 <= v < 5.0.0",
-        "ogioncz/elm-abstract-geometry": "0.0.1 <= v < 0.0.2"
-    },
     "exposed-modules": [
         "Pengu.Inventory",
         "Pengu.Map"
     ],
-    "version": "0.0.6",
-    "elm-version": "0.17.0 <= v < 0.18.0",
-    "license": "MIT"
+    "dependencies": {
+        "elm-lang/core": "5.0.0 <= v < 6.0.0",
+        "ogioncz/elm-abstract-geometry": "0.0.2 <= v < 0.0.3"
+    },
+    "elm-version": "0.18.0 <= v < 0.19.0"
 }
